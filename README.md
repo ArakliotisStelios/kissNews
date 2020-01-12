@@ -1,3 +1,7 @@
+## Last time Fix
+
+On line 27 at services/fetch-me.service.ts replace `res.sources` as SearchItem[] with `res['sources']` as SearchItem[].
+Apparently this does not trigger the Object parameter error.  
 # Devtest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
