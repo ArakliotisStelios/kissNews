@@ -8,7 +8,7 @@
 </div>
  <div>
     <label>Category: </label>
-    <select (change)="filterForeCasts($event.target.value)">
+    <select (change)="filterCategories($event.target.value)">
       <option value="0">Choose Category</option>
       <option *ngFor="let category of categories" value={{category}}>
         {{category}}

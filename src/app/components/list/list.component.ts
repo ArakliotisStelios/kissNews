@@ -29,11 +29,11 @@ export class ListComponent implements OnInit {
      );
   }
 
-  filterForeCasts(filterVal: string) {
+  filterCategories(filterVal: string) {
     if (filterVal == "0")
         this.tempResults = this.results;
     else
-        this.tempResults = this.results.filter((item) => item.category == filterVal);
+        this.tempResults = this.tempResults.filter((item) => item.category == filterVal);
 }
 
   getCategories(){
