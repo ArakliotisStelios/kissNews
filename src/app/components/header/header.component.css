@@ -1,0 +1,26 @@
+.flex-container {
+  display: flex; /* or inline-flex */
+  justify-content: flex-end;
+
+}
+  .header1{
+    background:#254a75;
+    height: 50px;
+
+  }
+  .header2{
+      height: 150px;
+      background-size:cover;
+      background-size: 100% 100%;
+      background-position: center;
+
+          background-image: url("/../../../assets/Your\ Cover.jpg");
+}
+
+.avatar{
+  position: absolute;
+  left: calc(10% - 50px);
+  top: calc(20% - 50px);
+  width: 150px;
+  height: 150px;
+}

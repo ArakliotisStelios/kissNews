@@ -1,0 +1,7 @@
+.flex-container {
+    display: flex; /* or inline-flex */
+    
+  }
+  .google-link{
+    margin-right: 20px;
+ }

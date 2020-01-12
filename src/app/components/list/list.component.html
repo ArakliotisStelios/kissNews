@@ -1,0 +1,26 @@
+<div class="main">
+<div class="flex-container">
+<div style="padding-right: 20px;">
+<form (submit)="search()">
+    <input [(ngModel)]="searchTerm" name="searchTerm">
+    <button (click)="search()">Search </button>
+ </form>
+</div>
+ <div>
+    <label>Category: </label>
+    <select (change)="filterForeCasts($event.target.value)">
+      <option value="0">Choose Category</option>
+      <option *ngFor="let category of categories" value={{category}}>
+        {{category}}
+      </option>
+    </select>
+  </div>
+</div>
+<div class="card-container">
+    <div *ngFor="let item of tempResults | paginate: { itemsPerPage: 6, currentPage: p }">
+        <app-item [item]="item" ></app-item>
+    </div>
+  </div>
+  <pagination-controls (pageChange)="p = $event"  directionLinks="true"
+ >></pagination-controls>
+</div>

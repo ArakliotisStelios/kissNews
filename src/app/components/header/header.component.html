@@ -1,0 +1,15 @@
+<div class="flex-container header1">
+    <div style ="margin-right: 20px;color: antiquewhite;"> {{user.name.charAt(0)}} {{user.surname.charAt(0)}}</div>
+    <div class="dropdown" style="margin-right: 10em;">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Hi {{user.name}}
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Settings</a>
+      <a class="dropdown-item" href="#">Logout</a>
+    </div>
+  </div>
+</div>
+<div class="flex-container header2">
+    <img src="./../../../assets/profile-image.png" alt="Avatar" class="avatar" >
+</div>
